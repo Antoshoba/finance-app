@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Category1 from './Category1';
+import Category2 from './Category2';
+import Category3 from './Category3';
+import Category4 from './Category4';
+import Category5 from './Category5';
+import Conversation from './Conversation';
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+    <Category1/>
+    <Category2/>
+    <Category3/>
+    <Category4/>
+    <Category5/>
+    <Conversation/>
+    </>
   );
-}
+};
 
 export default App;
+
+
