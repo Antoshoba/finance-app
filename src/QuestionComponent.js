@@ -5,7 +5,7 @@ import React from 'react';
 const QuestionComponent = ({ question, answer, handleChange }) => {
   return (
     <div>
-      <Typography variant="body1">{question}</Typography>
+      <Typography variant="body1" display={"none"}>{question}</Typography>
       <FormControl sx={{ minWidth: "300px", marginTop: 1 }}>
         <InputLabel id="demo-simple-select-label">Select an answer</InputLabel>
         <Select

@@ -1,6 +1,6 @@
+import { Button, Typography } from '@mui/material';
 import React, { useState } from 'react';
 
-import { Button } from '@mui/material';
 import QuestionComponent from './QuestionComponent';
 import TabsComponent from './TabsComponent';
 
@@ -37,6 +37,9 @@ const Category2 = () => {
   return (
     <div>
       <TabsComponent tabValue={tabValue} handleChange={handleChangeTab} />
+      <Typography variant="h6" gutterBottom>
+        {questions[tabValue]} <span style={{ color: 'red' }}>*</span>
+      </Typography>
       <QuestionComponent
         question={questions[tabValue]}
         answer={answers[tabValue]}
@@ -44,7 +47,7 @@ const Category2 = () => {
       />
       <div>
         <Button variant="contained" onClick={handlePrev} disabled={tabValue === 0}>Previous</Button>
-        <Button variant="contained" onClick={handleNext} disabled={tabValue === 3}>Next</Button>
+        <Button variant="contained" onClick={handleNext} disabled={tabValue === 4}>Next</Button>
       </div>
     </div>
   );
